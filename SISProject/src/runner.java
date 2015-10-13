@@ -10,7 +10,7 @@ public class runner
 			int choice = userInput.nextInt();
 			if(choice == 1)
 				{
-			System.out.println("This is add or delte student");
+					System.out.println("This is add or delete student");
 				}
 			if(choice == 2)
 				{
@@ -21,5 +21,4 @@ public class runner
 					System.out.println("Sort students");
 				}
 			}
-
 	}
