@@ -23,6 +23,7 @@ public class runner
 				if(choice == 2)
 					{
 						System.out.println("Change students grade or schedule");
+						ChangeStudentGradeSchedule.subMenuChangeGradeSchedule();
 					}
 				if(choice == 3)
 					{
