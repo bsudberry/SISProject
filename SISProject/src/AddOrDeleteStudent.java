@@ -18,11 +18,11 @@ public class AddOrDeleteStudent
 				int choice = userInput.nextInt();
 				if(choice == 1)
 					{
-						System.out.println("This is where the add student method will go");
+						addStudent.addsStudentToList();
 					}
 				if(choice == 2)
 					{
-						System.out.println("This is where the delete student method will go");
+						deleteStudent.deleteStudentFromList();
 					}
 				if(choice == 3)
 					{
