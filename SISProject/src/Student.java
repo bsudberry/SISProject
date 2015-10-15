@@ -2,15 +2,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
-public class ThroughStudents
+public class Student
 	{
 		private String firstName;
 		private String lastName;
 		private double gradePointAverage;
 		private String firstClass, secondClass, thirdClass;
 		private String firstGrade, secondGrade, thirdGrade;
-		static ArrayList<ThroughStudents>Class=new ArrayList<ThroughStudents>();
-		public ThroughStudents(String FN, String LN, double GPA, String FC, String FG, String SC, String SG, String TC, String TG)
+		static ArrayList<Student>Class=new ArrayList<Student>();
+		public Student(String FN, String LN, double GPA, String FC, String FG, String SC, String SG, String TC, String TG)
 			{
 				firstName = FN;
 				lastName = LN;
@@ -22,9 +22,20 @@ public class ThroughStudents
 				thirdClass = TC;
 				thirdGrade = TG;
 			}
-		public static void Students()throws IOException
+		public static void Class()throws IOException
 			{
+				Scanner file = new Scanner(new File("studentlist3.txt"));
 				
+				while(file.hasNext())
+					{
+						String firstName= file.next();
+						String lastName= file.next();
+						double gradePointAverage= 0;
+						String firstClass = file.next();
+						String firstGrade= file.next();
+						String secondClass= file.next();
+						
+					}
 			}
 
 		public String getFirstName()
