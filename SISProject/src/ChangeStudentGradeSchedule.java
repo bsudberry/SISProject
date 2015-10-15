@@ -44,7 +44,7 @@ public class ChangeStudentGradeSchedule
 					}
 				else if(classChoice.contains("b"))
 					{
-					Student.Class.get(i).getSecondGrade(Student.Class.getSecondGrade().setSecondGrade(gradeChange));
+					Student.Class.get(i).setSecondGrade(gradeChange);
 					System.out.println(Student.Class.get(i));
 					}
 				else if(classChoice.contains("c"))
