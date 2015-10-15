@@ -1,4 +1,7 @@
 import java.util.*;
-public class ClassCompare {
+public class ClassCompare 
+
+{
+	
 
 }

@@ -40,19 +40,17 @@ public class SortStudents
 		
 		public static void sortLastName()
 		{
-			
+			Collections.sort(Student.Class, new NameCompare());
 		}
 		
 		public static void sortGPA()
 		{
-			
-			
-			
+			Collections.sort(Student.Class, new GPACompare());	
 		}
 		
 		public static void sortClass()
 		{
-			
+			//Collections.sort(Student.Class, new ClassCompare());
 		}
 		
 	}
