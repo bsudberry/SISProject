@@ -18,7 +18,7 @@ public class runner
 				int choice = userInput.nextInt();
 				if(choice == 1)
 					{
-						System.out.println("This is add or delete student");
+						AddOrDeleteStudent.askQuestion();
 					}
 				if(choice == 2)
 					{

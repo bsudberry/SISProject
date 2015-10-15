@@ -9,7 +9,7 @@ public class AddOrDeleteStudent
 				askQuestion();
 			}
 
-		private static void askQuestion()
+		static void askQuestion()
 			{
 				System.out.println("You chose to delete or add a student, please specify.");
 				System.out.println("    (1) Delete student ");
@@ -18,15 +18,15 @@ public class AddOrDeleteStudent
 				int choice = userInput.nextInt();
 				if(choice == 1)
 					{
-						addStudent.addsStudentToList();
+						deleteStudent.deleteStudentFromList();
 					}
 				if(choice == 2)
 					{
-						deleteStudent.deleteStudentFromList();
+						addStudent.addsStudentToList();
 					}
 				if(choice == 3)
 					{
-					 runner.welcome();
+						runner.welcome();
 					}
 			}
 	}
