@@ -27,7 +27,7 @@ public class runner
 					}
 				if(choice == 3)
 					{
-						System.out.println("Sort students");
+						SortStudents.askHowToSort();
 					}
 				
 			}
