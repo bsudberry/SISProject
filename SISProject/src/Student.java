@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 public class Student
 	{
+		static int studentcounter=0;
 		private String firstName;
 		private String lastName;
 		private double gradePointAverage;
@@ -34,7 +35,13 @@ public class Student
 						String firstClass = file.next();
 						String firstGrade= file.next();
 						String secondClass= file.next();
+						String secondGrade= file.next();
+						String thirdClass= file.next();
+						String thirdGrade= file.next();
 						
+						studentcounter++;
+						
+						Class.add(new Student(firstName,lastName,gradePointAverage,firstClass,firstGrade,secondClass,secondGrade,thirdClass,thirdGrade));
 					}
 			}
 
