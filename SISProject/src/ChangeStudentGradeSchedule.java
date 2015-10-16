@@ -38,6 +38,7 @@ public class ChangeStudentGradeSchedule
 		{
 		position1 = 0;
 		Scanner userInput = new Scanner(System.in);
+		Scanner userInput2 = new Scanner(System.in);
 		runner.printStudents();
 		System.out.println("Enter the number of the student that you would like to change the grade of.");
 		position1= userInput.nextInt();
@@ -46,24 +47,24 @@ public class ChangeStudentGradeSchedule
 		if(classChoice==1)
 			{
 			System.out.println("What would you like to change their grade to?");
-			gradeChange = userInput.nextLine();
-			Student.Class.get(position1-1).setFirstGrade(gradeChange);
+			gradeChange = userInput2.nextLine();
+			Student.Class.get(position1-1).setFirstGrade(gradeChange.toUpperCase());
 			SortStudents.findGPA();
 			runner.printStudents();
 			}
 		else if(classChoice==2)
 			{
 			System.out.println("What would you like to change their grade to?");
-			gradeChange = userInput.nextLine();
-			Student.Class.get(position1-1).setSecondGrade(gradeChange);
+			gradeChange = userInput2.nextLine();
+			Student.Class.get(position1-1).setSecondGrade(gradeChange.toUpperCase());
 			SortStudents.findGPA();
 			runner.printStudents();
 			}
 		else if(classChoice==3)
 			{
 			System.out.println("What would you like to change their grade to?");
-			gradeChange = userInput.nextLine();
-			Student.Class.get(position1-1).setThirdGrade(gradeChange);
+			gradeChange = userInput2.nextLine();
+			Student.Class.get(position1-1).setThirdGrade(gradeChange.toUpperCase());
 			SortStudents.findGPA();
 			runner.printStudents();
 			}
