@@ -19,7 +19,7 @@ public class addStudent
 			{
 				System.out.println("What is the students first name?");
 				String firstName = userInput.nextLine();
-				System.out.println("What is the students last name?");n  
+				System.out.println("What is the students last name?");
 				String lastName = userInput.nextLine();
 				System.out.println("What is the students first period class?");
 				System.out.println("    (1) AP United States History");
