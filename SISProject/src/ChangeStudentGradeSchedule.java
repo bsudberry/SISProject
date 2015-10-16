@@ -43,27 +43,35 @@ public class ChangeStudentGradeSchedule
 		position1= userInput.nextInt();
 		System.out.println("For what class, (1), (2), or (3), would you like to change the grade?");
 		classChoice = userInput.nextInt();
-				if(classChoice==1)
-					{
-					System.out.println("What would you like to change their grade to?");
-					gradeChange = userInput.nextLine();
-					Student.Class.get(position1-1).setFirstGrade(gradeChange);
-					runner.printStudents();
-					}
-				if(classChoice==2)
-					{
-					System.out.println("What would you like to change their grade to?");
-					gradeChange = userInput.nextLine();
-					Student.Class.get(position1-1).setSecondGrade(gradeChange);
-					runner.printStudents();
-					}
-				if(classChoice==3)
-					{
-					System.out.println("What would you like to change their grade to?");
-					gradeChange = userInput.nextLine();
-					Student.Class.get(position1-1).setThirdGrade(gradeChange);
-					runner.printStudents();
-					}
+		if(classChoice==1)
+			{
+			System.out.println("What would you like to change their grade to?");
+			gradeChange = userInput.nextLine();
+			Student.Class.get(position1-1).setFirstGrade(gradeChange);
+			SortStudents.findGPA();
+			runner.printStudents();
+			}
+		else if(classChoice==2)
+			{
+			System.out.println("What would you like to change their grade to?");
+			gradeChange = userInput.nextLine();
+			Student.Class.get(position1-1).setSecondGrade(gradeChange);
+			SortStudents.findGPA();
+			runner.printStudents();
+			}
+		else if(classChoice==3)
+			{
+			System.out.println("What would you like to change their grade to?");
+			gradeChange = userInput.nextLine();
+			Student.Class.get(position1-1).setThirdGrade(gradeChange);
+			SortStudents.findGPA();
+			runner.printStudents();
+			}
+		else
+			{
+			System.out.println("What are you doing with your life? Redo it.");
+			ChangeStudentGradeSchedule.subMenuChangeGradeSchedule();
+			}
 		}
 	public static void changeSchedule()
 		{

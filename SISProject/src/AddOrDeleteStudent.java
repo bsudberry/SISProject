@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class AddOrDeleteStudent
 	{
+	public static String test;
 	public static String newFirstName = "";
 	public static String newLastName = "";
 	public static String newFirstClass = "";
