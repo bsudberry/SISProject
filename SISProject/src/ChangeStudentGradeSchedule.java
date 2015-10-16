@@ -8,7 +8,10 @@ public class ChangeStudentGradeSchedule
 	public static String swap1;
 	public static String swap2;
 	
-	static int choice;
+	public static int position1 = 0;
+	public static int choice;
+	public static int classChoice;
+	public static String gradeChange;
 	public static void subMenuChangeGradeSchedule()
 		{
 		Scanner userInput = new Scanner(System.in);
@@ -31,39 +34,34 @@ public class ChangeStudentGradeSchedule
 		}
 	public static void changeGrade()
 		{
+		position1 = 0;
 		Scanner userInput = new Scanner(System.in);
-		System.out.println("Enter the last name of the student that you would like to change the grade of.");
-		String name= userInput.nextLine();
-		System.out.println("For what class, (a), (b), or (c), would you like to change the grade?");
-		String classChoice=userInput.nextLine();
-		System.out.println("What would you like to change their grade to?");
-		String gradeChange=userInput.nextLine();
-		for(int i=0;i<Student.Class.size();i++)
-			{
-			if(Student.Class.get(i).getLastName().equals(name))
-				{
-				if(classChoice.contains("a"))
+		runner.printStudents();
+		System.out.println("Enter the number of the student that you would like to change the grade of.");
+		position1= userInput.nextInt();
+		System.out.println("For what class, (1), (2), or (3), would you like to change the grade?");
+		classChoice = userInput.nextInt();
+				if(classChoice==1)
 					{
-					Student.Class.get(i).setFirstGrade(gradeChange);
-					System.out.println(Student.Class.get(i));
+					System.out.println("What would you like to change their grade to?");
+					gradeChange = userInput.nextLine();
+					Student.Class.get(position1-1).setFirstGrade(gradeChange);
+					runner.printStudents();
 					}
-				else if(classChoice.contains("b"))
+				if(classChoice==2)
 					{
-					Student.Class.get(i).setSecondGrade(gradeChange);
-					System.out.println(Student.Class.get(i));
+					System.out.println("What would you like to change their grade to?");
+					gradeChange = userInput.nextLine();
+					Student.Class.get(position1-1).setSecondGrade(gradeChange);
+					runner.printStudents();
 					}
-				else if(classChoice.contains("c"))
+				if(classChoice==3)
 					{
-					Student.Class.get(i).setThirdGrade(gradeChange);
-					System.out.println(Student.Class.get(i));
+					System.out.println("What would you like to change their grade to?");
+					gradeChange = userInput.nextLine();
+					Student.Class.get(position1-1).setThirdGrade(gradeChange);
+					runner.printStudents();
 					}
-				}
-			else
-				{
-				System.out.println("What are you doing with your life? Redo it.");
-				ChangeStudentGradeSchedule.subMenuChangeGradeSchedule();
-				}
-			}
 		}
 	public static void changeSchedule()
 		{
