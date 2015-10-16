@@ -63,11 +63,8 @@ public class AddOrDeleteStudent
 			newThirdClass = userInput.nextLine();
 			System.out.println("Grade in that Class?");
 			newThirdGr = userInput.nextLine();
-			System.out.println("Grade Point Average?");
-			newGPA = userInput.nextDouble();
-			
 			Student.Class.add(new Student (newFirstName,newLastName,newGPA,newFirstClass,newFirstGr.toUpperCase(),newSecondClass,newSecondGr.toUpperCase(),newThirdClass,newThirdGr.toUpperCase()));
-			
+			SortStudents.findGPA();
 			runner.printStudents();
 		}
 		

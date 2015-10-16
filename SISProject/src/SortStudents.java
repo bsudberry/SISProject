@@ -57,14 +57,14 @@ public class SortStudents
 		
 		public static void sortClass()
 		{
-			//Collections.sort(Student.Class, new ClassCompare());
+			Collections.sort(Student.Class, new ClassCompare());
+			runner.printStudents();
 		}
 		
 		public static void findGPA()
 		{
 			for (int i = 0; i < Student.Class.size(); i++)
 			{
-			
 			calcFirstGr = 0.0;	
 			calcSecondGr = 0.0;	
 			calcThirdGr = 0.0;	
