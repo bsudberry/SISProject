@@ -7,6 +7,8 @@ public class ChangeStudentGradeSchedule
 	public static int class2;
 	public static String swap1;
 	public static String swap2;
+	public static String swap3;
+	public static String swap4;
 	
 	static int choice;
 	public static void subMenuChangeGradeSchedule()
@@ -83,16 +85,24 @@ public class ChangeStudentGradeSchedule
 		{
 			swap1 = Student.Class.get(position-1).getFirstClass();
 			swap2 = Student.Class.get(position-1).getSecondClass();
+			swap3 = Student.Class.get(position-1).getFirstGrade();
+			swap4 = Student.Class.get(position-1).getSecondGrade();
 			Student.Class.get(position-1).setFirstClass(swap2);
 			Student.Class.get(position-1).setSecondClass(swap1);
+			Student.Class.get(position-1).setFirstGrade(swap4);
+			Student.Class.get(position-1).setSecondGrade(swap3);
 		}
 		
 		if (class1 == 1 && class2 == 3)
 		{
 			swap1 = Student.Class.get(position-1).getFirstClass();
 			swap2 = Student.Class.get(position-1).getThirdClass();
+			swap3 = Student.Class.get(position-1).getFirstGrade();
+			swap4 = Student.Class.get(position-1).getThirdGrade();
 			Student.Class.get(position-1).setFirstClass(swap2);
 			Student.Class.get(position-1).setThirdClass(swap1);
+			Student.Class.get(position-1).setFirstGrade(swap4);
+			Student.Class.get(position-1).setThirdGrade(swap3);
 		}
 		
 		
@@ -100,8 +110,12 @@ public class ChangeStudentGradeSchedule
 		{
 			swap1 = Student.Class.get(position-1).getSecondClass();
 			swap2 = Student.Class.get(position-1).getThirdClass();
+			swap3 = Student.Class.get(position-1).getSecondClass();
+			swap4 = Student.Class.get(position-1).getThirdGrade();
 			Student.Class.get(position-1).setSecondClass(swap2);
 			Student.Class.get(position-1).setThirdClass(swap1);
+			Student.Class.get(position-1).setSecondGrade(swap4);
+			Student.Class.get(position-1).setThirdGrade(swap3);
 		}
 		
 		runner.printStudents();
