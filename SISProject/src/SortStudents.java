@@ -70,31 +70,31 @@ public class SortStudents
 			calcThirdGr = 0.0;	
 			switch (Student.Class.get(i).getFirstGrade().substring(0,1))
 			{
-			case "a":
+			
 			case "A":
 			{
 				calcFirstGr = 4.0;
 				break;
 			}
-			case "b":
+			
 			case "B":
 			{
 				calcFirstGr = 3.0;
 				break;
 			}
-			case "c":
+			
 			case "C":
 			{
 				calcFirstGr = 2.0;
 				break;
 			}
-			case "d":
+			
 			case "D":
 			{
 				calcFirstGr = 1.0;
 				break;
 			}
-			case "f":
+			
 			case "F":
 			{
 				calcFirstGr = 0.0;
@@ -104,31 +104,31 @@ public class SortStudents
 			
 			switch (Student.Class.get(i).getSecondGrade().substring(0,1))
 			{
-			case "a":
+			
 			case "A":
 			{
 				calcSecondGr = 4.0;
 				break;
 			}
-			case "b":
+			
 			case "B":
 			{
 				calcSecondGr = 3.0;
 				break;
 			}
-			case "c":
+			
 			case "C":
 			{
 				calcSecondGr = 2.0;
 				break;
 			}
-			case "d":
+			
 			case "D":
 			{
 				calcSecondGr = 1.0;
 				break;
 			}
-			case "f":
+			
 			case "F":
 			{
 				calcSecondGr = 0.0;
@@ -138,31 +138,31 @@ public class SortStudents
 			
 			switch (Student.Class.get(i).getThirdGrade().substring(0,1))
 			{
-			case "a":
+			
 			case "A":
 			{
 				calcThirdGr = 4.0;
 				break;
 			}
-			case "b":
+			
 			case "B":
 			{
 				calcThirdGr = 3.0;
 				break;
 			}
-			case "c":
+			
 			case "C":
 			{
 				calcThirdGr = 2.0;
 				break;
 			}
-			case "d":
+			
 			case "D":
 			{
 				calcThirdGr = 1.0;
 				break;
 			}
-			case "f":
+			
 			case "F":
 			{
 				calcThirdGr = 0.0;
