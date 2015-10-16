@@ -1,9 +1,16 @@
 import java.util.*;
 public class GPACompare implements Comparator<Student> 
 {
-	public static int compare(Student gPA1, Studen gPA2)
+	public int compare(Student gPA1, Student gPA2)
 	{
-		return gPA1.get
+		if (gPA1.getGradePointAverage() < gPA2.getGradePointAverage())
+				{
+			return 1;
+				}
+		else 
+		{
+			return -1;
+		}
 	}
 
 }

@@ -23,7 +23,7 @@ public class Student
 				thirdClass = TC;
 				thirdGrade = TG;
 			}
-		public static void Class()throws IOException
+		public static void fillClass()throws IOException
 			{
 				Scanner file = new Scanner(new File("studentlist3.txt"));
 				
