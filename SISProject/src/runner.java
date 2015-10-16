@@ -52,12 +52,13 @@ public class runner
 		
 		public static void printStudents()
 		{
+			System.out.println();
 			for (int i = 0; i < Student.Class.size(); i ++)
 			{
 				System.out.print(i+1 + ")" + Student.Class.get(i).getFirstName() + " " + Student.Class.get(i).getLastName() + " ");
 				System.out.printf("%1.1f", Student.Class.get(i).getGradePointAverage());
 				System.out.println(" " + Student.Class.get(i).getFirstClass() +" "+ Student.Class.get(i).getFirstGrade() +" "+ Student.Class.get(i).getSecondClass() +" "+ Student.Class.get(i).getSecondGrade() +" "+ Student.Class.get(i).getThirdClass() +" "+ Student.Class.get(i).getThirdGrade());
 			}
-			
+			System.out.println();
 		}
 	}

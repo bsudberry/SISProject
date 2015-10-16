@@ -66,7 +66,7 @@ public class AddOrDeleteStudent
 			System.out.println("Grade Point Average?");
 			newGPA = userInput.nextDouble();
 			
-			Student.Class.add(new Student (newFirstName,newLastName,newGPA,newFirstClass,newFirstGr,newSecondClass,newSecondGr,newThirdClass,newThirdGr));
+			Student.Class.add(new Student (newFirstName,newLastName,newGPA,newFirstClass,newFirstGr.toUpperCase(),newSecondClass,newSecondGr.toUpperCase(),newThirdClass,newThirdGr.toUpperCase()));
 			
 			runner.printStudents();
 		}
