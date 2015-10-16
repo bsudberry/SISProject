@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class ChangeStudentGradeSchedule
 	{
+	public static int position = 0;
+	public static int class1;
+	public static int class2;
+	public static String swap1;
+	public static String swap2;
 	
 	static int choice;
 	public static void subMenuChangeGradeSchedule()
@@ -62,9 +67,47 @@ public class ChangeStudentGradeSchedule
 		}
 	public static void changeSchedule()
 		{
-		Scanner userInput = new Scanner(System.in);
-		System.out.println("This is where the schedule will be changed");
-		System.out.println("Which student's schedule would you like to change?");
-		String scheduleChoice=userInput.nextLine();
+		position = 0;
+		class1 = 0;
+		class2 = 0;
+		Scanner userInput = new Scanner (System.in);
+		runner.printStudents();
+		System.out.println("Please input the position of the Student whose schedule you'd like to alter.");
+		position = userInput.nextInt();
+		System.out.println("Now, input the period of the first class you'd like to switch.");
+		class1 = userInput.nextInt();
+		System.out.println("Now input the period you'd like to switch with period "+ class1 + ".");
+		class2 = userInput.nextInt();
+		
+		if (class1 == 1 && class2 == 2)
+		{
+			swap1 = Student.Class.get(position-1).getFirstClass();
+			swap2 = Student.Class.get(position-1).getSecondClass();
+			Student.Class.get(position-1).setFirstClass(swap2);
+			Student.Class.get(position-1).setSecondClass(swap1);
+		}
+		
+		if (class1 == 1 && class2 == 3)
+		{
+			swap1 = Student.Class.get(position-1).getFirstClass();
+			swap2 = Student.Class.get(position-1).getThirdClass();
+			Student.Class.get(position-1).setFirstClass(swap2);
+			Student.Class.get(position-1).setThirdClass(swap1);
+		}
+		
+		
+		if (class1 == 2 && class2 == 3)
+		{
+			swap1 = Student.Class.get(position-1).getSecondClass();
+			swap2 = Student.Class.get(position-1).getThirdClass();
+			Student.Class.get(position-1).setSecondClass(swap2);
+			Student.Class.get(position-1).setThirdClass(swap1);
+		}
+		
+		runner.printStudents();
+		
+		
+		
+		
 		}
 	}
