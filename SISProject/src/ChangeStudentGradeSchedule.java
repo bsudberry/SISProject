@@ -124,6 +124,11 @@ public class ChangeStudentGradeSchedule
 			Student.Class.get(position-1).setSecondGrade(swap4);
 			Student.Class.get(position-1).setThirdGrade(swap3);
 		}
+		else 
+		{
+		System.out.println("That is not a valid choice, please choose again.");
+		changeSchedule();
+		}
 		
 		runner.printStudents();
 		

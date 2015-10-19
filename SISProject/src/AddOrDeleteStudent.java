@@ -47,7 +47,6 @@ public class AddOrDeleteStudent
 		{
 			Scanner userInput = new Scanner(System.in);
 			System.out.println("Add a student.");
-			
 			System.out.println("First Name?");
 			newFirstName = userInput.nextLine();
 			System.out.println("Last Name?");

@@ -38,6 +38,11 @@ public class SortStudents
 					{
 					 runner.welcome();
 					}
+				else
+				{
+				System.out.println("That is not a valid choice, please choose again.");
+				askHowToSort();
+				}
 				
 			}
 		
