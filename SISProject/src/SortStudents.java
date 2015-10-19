@@ -8,6 +8,7 @@ public class SortStudents
 		public static double calcFirstGr = 0;
 		public static double calcSecondGr = 0;
 		public static double calcThirdGr = 0;
+		public static int periodSort = 0;
 		
 		static Scanner userInput = new Scanner(System.in);
 		public static void main(String[] args)
@@ -58,6 +59,9 @@ public class SortStudents
 		
 		public static void sortClass()
 		{
+			Scanner userInput = new Scanner (System.in);
+			System.out.println("Which period would you like to sort by?");
+			periodSort = userInput.nextInt();
 			Collections.sort(Student.Class, new ClassCompare());
 			runner.printStudents();
 		}
