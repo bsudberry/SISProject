@@ -50,11 +50,7 @@ public class runner
 					System.out.println("Thank you, have a good day!");
 				}
 				
-				else
-				{
-					System.out.println("That's not a valid option, please choose again.");
-					welcome();
-				}
+				
 				
 			}
 		
