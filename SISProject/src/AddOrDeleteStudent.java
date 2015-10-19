@@ -25,15 +25,15 @@ public class AddOrDeleteStudent
 			{
 			
 				System.out.println("You chose to delete or add a student, please specify.");
-				System.out.println("    (1) Delete student ");
-				System.out.println("    (2) Add student ");
+				System.out.println("    (1) Add student ");
+				System.out.println("    (2) Delete student ");
 				System.out.println("    (3) Return to home menu ");
 				int choice = userInput.nextInt();
-				if(choice == 1)
+				if(choice == 2)
 					{
 						deleteStudent();
 					}
-				if(choice == 2)
+				if(choice == 1)
 					{
 						addStudent();
 					}
