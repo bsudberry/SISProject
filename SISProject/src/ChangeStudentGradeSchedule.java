@@ -117,7 +117,7 @@ public class ChangeStudentGradeSchedule
 		{
 			swap1 = Student.Class.get(position-1).getSecondClass();
 			swap2 = Student.Class.get(position-1).getThirdClass();
-			swap3 = Student.Class.get(position-1).getSecondClass();
+			swap3 = Student.Class.get(position-1).getSecondGrade();
 			swap4 = Student.Class.get(position-1).getThirdGrade();
 			Student.Class.get(position-1).setSecondClass(swap2);
 			Student.Class.get(position-1).setThirdClass(swap1);
