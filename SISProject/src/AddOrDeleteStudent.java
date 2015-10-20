@@ -63,7 +63,7 @@ public class AddOrDeleteStudent
 			newThirdClass = userInput.nextLine();
 			System.out.println("Grade in that Class?");
 			newThirdGr = userInput.nextLine();
-			Student.Class.add(new Student (newFirstName,newLastName,newGPA,newFirstClass,newFirstGr.toUpperCase(),newSecondClass,newSecondGr.toUpperCase(),newThirdClass,newThirdGr.toUpperCase()));
+			Student.Class.add(new Student (newFirstName,newLastName,newGPA,newFirstClass.substring(0,1).toUpperCase()+newFirstClass.substring(1),newFirstGr.toUpperCase(),newSecondClass.substring(0,1).toUpperCase()+newSecondClass.substring(1),newSecondGr.toUpperCase(),newThirdClass.substring(0,1).toUpperCase()+newThirdClass.substring(1),newThirdGr.toUpperCase()));
 			SortStudents.findGPA();
 			runner.printStudents();
 		}
